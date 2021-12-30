@@ -4,6 +4,8 @@ import fauna from 'faunadb';
 const { query } = fauna;
 const client = new fauna.Client({ secret: process.env.FAUNA_API_KEY });
 
+console.log(client);
+
 interface ImagesQueryResponse {
   after?: {
     id: string;
